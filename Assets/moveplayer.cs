@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class moveplayer : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class moveplayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxis("Horizontal")*6,Input.GetAxis("Vertical")*6);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxis("Horizontal")*9,Input.GetAxis("Vertical")*9);
     
     }
 
@@ -25,6 +26,20 @@ public class moveplayer : MonoBehaviour
         if (other.tag=="key")
         {
             havekey = "y";
+        }
+    }
+
+    private void onTriggerEnter2D(Collider2D door)
+
+    {
+
+        if ((door.gameObject.tag == "door") && (havekey=="y"))
+
+        {
+
+            SceneManager.LoadScene("youwin");
+
+
         }
     }
 }
