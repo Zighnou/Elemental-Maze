@@ -29,7 +29,7 @@ public class moveplayer : MonoBehaviour
         }
     }
 
-    private void onTriggerEnter2D(Collider2D door)
+    private void onCollisonEnter2D(Collider2D door)
 
     {
 
