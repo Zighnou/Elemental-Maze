@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class moveplayer : MonoBehaviour
 {
@@ -18,16 +19,10 @@ public class moveplayer : MonoBehaviour
 
     // Movement
     private Rigidbody2D _rigidbody;
-    public float speed = 4f;
-    public float maxHorizontalSpeed = 5f;
-    public float recoilAmount = 4f;
     public Transform player;
 
     // Shooting
-    public GameObject bulletPrefab;
-    public bool reloading = false;
-    public float cooldown = .5f;
-    public float cooldownLeft = 0f;
+    public GameObject[] bulletPrefab;
     public Transform shootPoint;
 
     // // VFX

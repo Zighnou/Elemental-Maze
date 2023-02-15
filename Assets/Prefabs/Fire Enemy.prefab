@@ -94,9 +94,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3453976260540017521}
   - component: {fileID: 1167159101568176589}
-  - component: {fileID: 6462332444847540959}
+  - component: {fileID: -2380709304893167885}
   m_Layer: 0
-  m_Name: Water Enemy
+  m_Name: Fire Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 0.2509804, g: 0.3764706, b: 0.8980392, a: 1}
+  m_Color: {r: 0.8980392, g: 0.2627451, b: 0.2509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &6462332444847540959
+--- !u!60 &-2380709304893167885
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
