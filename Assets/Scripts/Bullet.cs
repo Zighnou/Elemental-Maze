@@ -5,12 +5,16 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed = 8f;
-    public Rigidbody2D _rigidbody;
+    private Rigidbody2D _rigidbody;
     public bool playerBullet = false;
+    public bool ice = false;
+    public bool water = false;
+    public bool fire = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        _rigidbody = GetComponent<Rigidbody2D>();
         _rigidbody.AddRelativeForce(Vector2.right * speed, ForceMode2D.Impulse);
     }
 

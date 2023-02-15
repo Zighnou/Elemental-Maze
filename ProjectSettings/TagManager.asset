@@ -8,6 +8,8 @@ TagManager:
   - player
   - door
   - Bullet
+  - Ground
+  - Water
   layers:
   - Default
   - TransparentFX
